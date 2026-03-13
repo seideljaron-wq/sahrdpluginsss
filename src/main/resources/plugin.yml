@@ -1,0 +1,32 @@
+name: ShardPlugin
+version: 2.0.0
+main: de.shardplugin.ShardPlugin
+api-version: 1.20
+description: Shard management plugin with PlaceholderAPI + Discord logging
+authors: [javakuba]
+softdepend: [PlaceholderAPI]
+
+commands:
+  shard-give:
+    description: Give shards to a player
+    usage: /shard-give <player> <amount>
+    permission: shardplugin.give
+  shard-remove:
+    description: Remove shards from a player
+    usage: /shard-remove <player> <amount>
+    permission: shardplugin.admin
+  shards-admin:
+    description: Admin shard management (only javakuba)
+    usage: /shards-admin <add|remove> <player> | /shards-admin reload
+    permission: shardplugin.superadmin
+
+permissions:
+  shardplugin.give:
+    description: Allows using /shard-give
+    default: op
+  shardplugin.admin:
+    description: Allows using /shard-remove (assigned via /shards-admin)
+    default: false
+  shardplugin.superadmin:
+    description: Allows using /shards-admin (only javakuba)
+    default: false

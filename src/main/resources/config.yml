@@ -1,0 +1,27 @@
+discord:
+  webhook-url: "https://discord.com/api/webhooks/1482053685180895233/IzT8kM1f2NPwoPT5B59oi16baZTtGt8yiLtbCN1gnGa6MqNmoOxtLYN8oYuS70efsKuM"
+
+settings:
+  # Only this player can use /shards-admin to add/remove admins
+  superadmin: "javakuba"
+  # List of admin player names who can use /shard-remove
+  admins:
+    - "javakuba"
+
+messages:
+  give-success:        "&aSuccessfully gave &e{amount} Shards &ato &e{player}&a!"
+  give-received:       "&aYou received &e{amount} Shards &afrom &e{sender}&a!"
+  remove-success:      "&aSuccessfully removed &e{amount} Shards &afrom &e{player}&a!"
+  remove-notify:       "&cAn admin removed &e{amount} Shards &cfrom your account."
+  not-enough-shards:   "&c{player} only has {current} Shards — cannot remove {amount}."
+  give-usage:          "&cUsage: /shard-give <player> <amount>"
+  remove-usage:        "&cUsage: /shard-remove <player> <amount>"
+  admin-usage:         "&cUsage: /shards-admin <add|remove> <player>  |  /shards-admin reload"
+  no-permission:       "&cYou don't have permission to use this command!"
+  player-not-found:    "&cPlayer &e{player} &cwas not found or is offline."
+  invalid-amount:      "&cInvalid amount! Must be a positive whole number."
+  reload-success:      "&aPlugin config reloaded successfully!"
+  admin-added:         "&a{player} has been added to the admin list."
+  admin-removed:       "&c{player} has been removed from the admin list."
+  already-admin:       "&e{player} is already an admin."
+  not-admin:           "&e{player} is not an admin."
